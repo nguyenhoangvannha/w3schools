@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML Form Elements</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Nguyen Hoang Van Nha">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+    <form action="/action_page.php" autocomplete="on">
+        <fieldset style="width:250px;">
+            <legend>Drop-down list</legend>
+            <select name="countries" id="" size="3" multiple>
+                <option value="vietnam" selected>Viet nam</option>
+                <option value="laos">Lao</option>
+                <option value="cambodia">Campuchia</option>
+                <option value="thailand">Thai lan</option>
+            </select>
+        </fieldset>
+        <input type="color" name="favcolor">
+        <input type="date" name="bday" min="2000-01-02">
+        <input type="datetime-local" name="bdaytime">
+        <input type="email" name="email"><br>
+        <input type="range" name="points" min="0" max="10"> Search Google:
+        <input type="search" name="googlesearch">
+        <input type="tel" name="usrtel">
+        <input type="time" name="usr_time">
+        <input type="url" name="homepage">
+        <input type="text" name="name" size="40" maxlength="50" autofocus>
+        <input type="reset">
+    </form>
+    <textarea name="    " id="" cols="30" rows="10">The heo</textarea>
+    <button type="button" onclick="alert('Hello world')">Click me!</button>
+    <form action="/action_page.php">
+        <input list="browsers">
+        <datalist id="browsers">
+            <option value="Internet Explorer">
+                <option value="Firefox">
+                    <option value="Chrome">
+                        <option value="Opera">
+                            <option value="Safari">
+        </datalist>
+    </form>
+    <form action="/action_page.php" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        0
+        <input type="range" id="a" name="a" value="50"> 100 +
+        <input type="number" id="b" name="b" value="50"> =
+        <output name="x" for="a b"></output>
+        <br>
+        <br>
+        <input type="submit">
+    </form>
+</body>
+
+</html>

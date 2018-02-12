@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS Scope</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="NHVN">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+            var a = 5;
+            var link = "https://www.w3schools.com/js/js_numbers.asp";
+            function myFunction() {
+                globalVar = "Automaticaly global";
+            }
+        </script>
+        <script>
+            document.write(window.a);
+            document.write(a);
+            myFunction();
+            document.write(globalVar);
+        </script>
+    </body>
+</html>

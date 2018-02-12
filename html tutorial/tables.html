@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML Tables</title>
+    <meta charset="UTF-8">
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 5px;
+        }
+
+        table {
+            border-spacing: 5px;
+        }
+
+        table#t02 {
+            width: 100%;
+            background-color: aqua;
+        }
+
+        table#t01 tr:nth-child(even) {
+            background-color: #eee;
+        }
+
+        table#t01 tr:nth-child(odd) {
+            background-color: #fff;
+        }
+
+        table#t01 th {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <table id="t02">
+        <caption>Monthly savings</caption>
+        <tr>
+            <th>Tiet</th>
+            <th>Thu 2</th>
+            <th>Thu 3</th>
+            <th>Thu 4</th>
+            <th>Thu 5</th>
+            <th>Thu 6</th>
+            <th>Thu 7</th>
+            <th>Thu CN</th>
+        </tr>
+        <tr>
+            <td>6:40</td>
+            <td colspan="2" rowspan="4">O nha</td>
+        </tr>
+    </table>
+    <table id="t01">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>80</td>
+        </tr>
+    </table>
+</body>
+
+</html>
