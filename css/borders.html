@@ -1,0 +1,73 @@
+/*
+Border Style
+The border-style property specifies what kind of border to display.
+
+The following values are allowed:
+
+dotted - Defines a dotted border
+dashed - Defines a dashed border
+solid - Defines a solid border
+double - Defines a double border
+groove - Defines a 3D grooved border. The effect depends on the border-color value
+ridge - Defines a 3D ridged border. The effect depends on the border-color value
+inset - Defines a 3D inset border. The effect depends on the border-color value
+outset - Defines a 3D outset border. The effect depends on the border-color value
+none - Defines no border
+hidden - Defines a hidden border
+The border-style property can have from one to four values (for the top border, right border, bottom border, and the left border).
+*/
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Borders</title>
+	<style>
+		p.one{
+			border-style: solid;
+			border-width: 5px;
+			border-color: red;
+		}
+		p.two{
+			border-style: dotted;
+			border-bottom-style: solid;
+			border-width: medium;
+			border-color: green;
+			border-radius: 10px;
+		}
+		p.three{
+			border-style: groove dotted solid dashed;
+			border-width: 2px 4px 6px 8px;
+			border-color: red green blue yellow;
+			border-radius: 5px;
+		}
+	</style>
+</head>
+<body>
+
+	<h3 style="border: dotted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis expedita a odio aspernatur porro alias voluptates necessitatibus sequi ut obcaecati, non nihil temporibus, ducimus omnis eligendi dolores laborum recusandae molestiae.</h3>
+	<h3 style="border: dashed;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur velit reprehenderit et quisquam, ex sunt nisi corrupti. Sapiente et optio, soluta ducimus eveniet, libero, dignissimos ad tenetur fuga aspernatur excepturi.</h3>
+	<h3 style="border: solid;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem dicta nobis optio magnam blanditiis! Fugiat amet rerum cumque, repellendus molestiae pariatur vel iste, reiciendis sit totam doloribus odit eum officiis.</h3>
+	<h3 style="border: double;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum delectus, laboriosam ipsam pariatur mollitia recusandae similique et autem, minima, tempore vel sequi animi iusto sit dolores consequatur fugiat ipsum expedita.</h3>
+	<h3 style="border: groove;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ducimus numquam corporis necessitatibus aut labore mollitia molestiae tempora. Voluptas dolorum explicabo officia itaque, deleniti tempore atque beatae, magni ad eligendi.</h3>
+	<h3 style="border: ridge;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero pariatur perspiciatis autem cum ratione odio rerum doloremque accusamus amet eos fuga officiis facere quidem, assumenda quibusdam esse velit reiciendis, itaque.</h3>
+	<h3 style="border: inset;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis reiciendis voluptas voluptatem, eum ducimus inventore. Obcaecati doloremque eveniet nemo itaque atque vitae voluptate. Libero, cupiditate sunt possimus ad dignissimos nesciunt.</h3>
+	<h3 style="border: outset;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque excepturi dolores, commodi qui ducimus odio nemo optio quam natus aspernatur aut id consectetur asperiores sit minus maiores. Voluptas a, quasi?</h3>
+	<h3 style="border: none;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos in voluptas facere, eaque pariatur quia molestias possimus earum illo commodi iusto enim ratione error, explicabo nam perferendis autem voluptatem eius.</h3>
+	<h3 style="border: hidden;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas delectus quidem magni, hic nam qui esse velit quam labore autem a modi quibusdam porro, iste ullam nisi totam alias repellendus.</h3>
+	<h3 style="border-top: dotted; border-bottom: solid; border-right: inset; border-left: outset;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique repellendus vitae quisquam, voluptatem possimus voluptas quod architecto officiis reprehenderit hic, dicta qui amet! Voluptates, corporis corrupti incidunt, ipsum aut deleniti!</h3>
+	<br>
+	<br>
+
+	<p class="one">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt atque aspernatur laboriosam modi temporibus quas ea, maxime quo, quos unde repudiandae? Voluptate quos sequi cum quae dolores impedit quaerat deserunt.</p>
+	<p class="two">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat ea, labore vero dolorem unde impedit ab cupiditate. Iure ipsum reprehenderit adipisci earum libero ipsa, velit quibusdam sint eaque corporis aliquid?</p>
+	<p class="three">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur cumque delectus laboriosam ipsum id quae praesentium vitae, dignissimos maxime blanditiis illo rerum explicabo totam, illum eos placeat! Consequuntur, cum, eaque.</p>
+	<p style="border: 5px solid green">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, blanditiis? Veritatis sint atque commodi iure qui doloremque quasi voluptatibus similique quaerat amet, sequi pariatur numquam! Consequuntur, sed. Consectetur, eos, consequuntur!</p>
+	<p style="border: 5px solid green">
+		The border property is a shorthand property for the following individual border properties:
+
+border-width
+border-style (required)
+border-color</p>
+
+
+</body>
+</html>
